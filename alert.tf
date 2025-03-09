@@ -18,7 +18,7 @@ variable "sns_topic_name" {
 variable "alert_thresholds" {
   description = "List of billing thresholds to create alarms for"
   type        = list(number)
-  default     = [100, 120] # Default thresholds in USD
+  default     = [100, 120, 140, 160] # Default thresholds in CAD
 }
 
 variable "email_endpoints" {
@@ -28,13 +28,13 @@ variable "email_endpoints" {
 }
 
 variable "currency" {
-  description = "Currency for the billing alert (e.g., USD, EUR, GBP)"
+  description = "Currency for the billing alert (e.g., CAD, EUR, GBP)"
   type        = string
-  default     = "USD"
+  default     = "CAD"
 }
 
 variable "environment_tag" {
-  description = "Tag to define the environment (e.g., Production, Development)"
+  description = "Tag to define the environment (e.g., Production, Development, Quality-Check)"
   type        = string
   default     = "Production"
 }
