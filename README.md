@@ -1,6 +1,5 @@
 # 🚀 AWS Billing Alert Terraform Module  
 
-![AWS-billing](https://imgur.com/wtaBi16.png)  
 
 Welcome to the **AWS Billing Alert Terraform module!** This module helps you set up automatic billing alerts for your AWS account. Once configured, you'll receive notifications when your AWS charges exceed specified amounts, helping you stay on top of your costs. 💰  
 
@@ -57,7 +56,7 @@ Welcome to the **AWS Billing Alert Terraform module!** This module helps you set
 3. Clone the repository:  
 
    ```bash  
-   git clone https://github.com/NotHarshhaa/aws-billing-alert-terraform.git  
+   git clone https://github.com/osereme-project/aws-billing-alert-terraform.git  
    ```  
 
 4. Move into the directory:  
@@ -157,12 +156,12 @@ Here’s an example configuration:
 
 ```hcl  
 module "billing_alert" {  
-  source                     = "github.com/NotHarshhaa/aws-billing-alert-terraform"  
+  source                     = "github.com/osereme-project/aws-billing-alert-terraform"  
   aws_region                 = "us-west-2"  
   alert_thresholds           = [100, 150, 200]  
-  email_endpoints            = ["my-email@example.com", "finance@example.com"]  
+  email_endpoints            = ["your-email@example.com", "accounting@example.com"]  
   auto_confirm_subscription  = true  
-  currency                   = "USD"  
+  currency                   = "CAD"  
 }  
 ```  
 
@@ -173,20 +172,3 @@ module "billing_alert" {
 This module is flexible and supports dynamic region, currency, and threshold configurations. Customize the `alert.tf` file as needed and reapply the configuration using `terraform apply`.  
 
 ---
-
-## 🙌 Feedback and Contributions
-
-> [!TIP]  
-> _We'd love to hear your thoughts! Whether it's feedback, bug reports, or pull requests, feel free to get involved. Your contributions help make this module better for everyone._
-
-## ⭐ Hit the Star  
-
-> [!IMPORTANT]  
-> _If you find this repository helpful for learning or in practice, **please hit the star button on GitHub.** ⭐ It helps others find this resource too!_
-
-### 👤 Author  
-
-![banner](https://imgur.com/2j7GSPs.png)
-
-> [!TIP]  
-> **Join Our [Telegram Community](https://t.me/prodevopsguy) || [Follow me on GitHub](https://github.com/NotHarshhaa) for more DevOps content!**
