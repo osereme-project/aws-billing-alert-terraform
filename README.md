@@ -1,9 +1,3 @@
-<div align="center"> 
-  <p>Visitor count</p>
-  <img src="https://profile-counter.glitch.me/{osereme-project}/count.svg" alt="Visitor's Count" />
-</div>
-
-
 # 🚀 AWS Billing Alert Terraform Module  
 
 
